@@ -1,0 +1,20 @@
+name: densefusion
+channels:
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.6
+  - cudatoolkit=10.2
+  - pytorch=1.6
+  - torchvision
+  - jupyter
+  - pip
+  - pillow
+  - pip:
+    - pypng
+    - pyyaml
+    - matplotlib
+    - numpy
+    - opencv-python
+    - scikit-image
+    - scipy
