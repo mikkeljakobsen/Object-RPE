@@ -1,12 +1,13 @@
 numpy
-scipy
+scipy==1.4.1
 Pillow
 cython
 matplotlib
-scikit-image
-tensorflow-gpu==1.11
-keras>=2.0.8
+scikit-image==0.16.2
+tensorflow==2.2.0
+keras==2.3.1
 opencv-python
 h5py
 imgaug
 IPython[all]
+pycocotools

@@ -253,7 +253,7 @@ void MainController::run()
             }
             continue;
         }
-        cv::cvtColor(rgb_img, rgb_img, CV_BGR2RGB);
+        cv::cvtColor(rgb_img, rgb_img, cv::COLOR_BGR2RGB);
 
         if(!gui->pause->Get() || pangolin::Pushed(*gui->step))
         {

@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <launch>
   <node name="object_pose_estimation" pkg="obj_pose_est" type="iliad_rpe_node" cwd="node">
-  <param name="ObjectRPE_dir" value="/home/aass/catkin_ws/src/Object-RPE"/>  
+  <param name="ObjectRPE_dir" value="/home/mikkel/catkin_ws/src/Object-RPE"/>
   <param name="dataset" value="Warehouse"/> <!-- YCB-Video or Warehouse -->  
-  <param name="data_dir" value="/home/aass/catkin_ws/src/Object-RPE/data"/>
+  <param name="data_dir" value="/home/mikkel/catkin_ws/src/Object-RPE/data"/>
   <param name="num_frames" value="150"/> <!-- Number of RGB-D frames will be processed in 3D mapping-->
   <param name="num_keyframes" value="10"/> <!-- Number of RGB-D keyframes will be applied for Mask-RCNN and DenseFusion -->
   <param name="call_service" value="true"/>

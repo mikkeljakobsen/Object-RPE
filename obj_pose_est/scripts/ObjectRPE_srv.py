@@ -12,7 +12,7 @@ def handle_ObjectRPE(req):
     os.system('rm -r ' + mask_color_dir)
 
     #--------------------------Start DenseFusion---------------------------
-    print "Mask-RCNN running ..."
+    print("Mask-RCNN running ...")
 
     executed_file = os.path.join(req.ObjectRPE_dir, 'Mask_RCNN/samples/warehouse/iliad.py') 
     maskrcnn_model_dir = ' --weights=' + os.path.join(req.data_dir, 'trained_models/warehouse/mask_rcnn.h5')
@@ -23,7 +23,7 @@ def handle_ObjectRPE(req):
 
     #--------------------------End DenseFusion---------------------------
 
-    print "3D mapping running ..."
+    print("3D mapping running ...")
     executed_file = os.path.join(req.ObjectRPE_dir, 'obj_pose_est/mapping/app/build/mapping')
     data_dir = ' -l ' + req.data_dir + '/'
     num_frames = ' -num_frames ' + str(req.num_frames)
@@ -51,7 +51,7 @@ def handle_ObjectRPE(req):
 def ObjectRPE_server():
     rospy.init_node('ObjectRPE_server')
     s = rospy.Service('Seg_Reconst_PoseEst', ObjectRPE, handle_ObjectRPE)
-    print "Ready to run ObjectRPE."
+    print("Ready to run ObjectRPE.")
     rospy.spin()
 
 if __name__ == "__main__":

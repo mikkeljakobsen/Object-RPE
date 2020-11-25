@@ -26,7 +26,7 @@ find_package(CUDA REQUIRED)
 find_package(OpenNI2 REQUIRED)
 find_package(efusion REQUIRED)
 find_package(SuiteSparse REQUIRED)
-find_package(OpenCV 3.1 REQUIRED )
+find_package(OpenCV REQUIRED )
 
 
 if(WIN32)
